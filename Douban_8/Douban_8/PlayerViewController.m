@@ -11,8 +11,8 @@
 
 #import <AFNetworking/UIKit+AFNetworking.h>
 #import <SDWebImage/UIImageView+WebCache.h>
-//#import <UIKit+AFNetworking.h>
-//#import <UIImageView+WebCache.h>
+#import <UIKit+AFNetworking.h>
+#import <UIImageView+WebCache.h>
 
 
 #import <Masonry/Masonry.h>
@@ -39,15 +39,15 @@
 
 @interface PlayerViewController ()<DoubanDelegate>
 {
-    BOOL isPlaying;
+    BOOL isPlaying;//是否在播放
     NSTimer *timer;
-    NSMutableString *totalTimeString;
+    NSMutableString *totalTimeString;//显示播放时间的字符串
 }
 
 @property (strong, nonatomic) UILabel *channelTitleLabel;/**<频道名称标签*/
 
 @property (strong, nonatomic) UIImageView *albumCoverImage;/**<专辑封面图片*/
-@property (strong, nonatomic) UIImageView *albumCoverMaskImage;/**<专辑相册封面图片*/
+@property (strong, nonatomic) UIImageView *albumCoverMaskImage;/**<专辑相册封面图(当音乐暂停时显示的imageView)*/
 
 @property (strong, nonatomic) UIProgressView *timerProgressBar;/**<定时器的进度条*/
 @property (strong, nonatomic) UILabel *timeLabel;/**<定时器标签*/
@@ -74,6 +74,7 @@
     [self p_configConstrains];
     [self p_loadPlaylist];
     [PlayerController sharedInstance].songInfoDelegate = self;
+    //定时器更新进度条
     timer = [NSTimer scheduledTimerWithTimeInterval:0.02
                                              target:self
                                            selector:@selector(updateProgress)
@@ -83,6 +84,7 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    //图片圆角化
     self.albumCoverImage.layer.cornerRadius = self.albumCoverImage.bounds.size.width/2.0;
     self.albumCoverImage.layer.masksToBounds = YES;
     [super viewDidAppear:animated];
@@ -101,6 +103,7 @@
 }
 
 #pragma mark - Buttons
+//点击暂停按钮的事件
 - (void)pauseButtonDidTapped:(UIButton *)sender {
     if (isPlaying) {
         isPlaying = NO;
@@ -129,7 +132,7 @@
     }
     [[PlayerController sharedInstance] skipSong];
 }
-
+//点击like按钮的事件
 - (void)likeButtonDidTapped:(UIButton *)sender {
     if (![[SongInfo currentSong].like intValue]) {
         [SongInfo currentSong].like = @"1";
@@ -141,7 +144,7 @@
         [self.likeButton setBackgroundImage:[UIImage imageNamed:@"heart1"] forState:UIControlStateNormal];
     }
 }
-
+//点击删除按钮的事件
 - (void)deleteButtonDidTapped:(UIButton *)sender {
     if (isPlaying == NO) {
         isPlaying = YES;
