@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "NetworkManager.h"
 #import <UIImageView+AFNetworking.h>
+
 @interface LoginViewController ()
 {
     NSMutableString* captchaID;//验证码ID

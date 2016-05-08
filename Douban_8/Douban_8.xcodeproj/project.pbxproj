@@ -7,34 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4AA2108F1CDDD77100E0BA46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA2108E1CDDD77100E0BA46 /* main.m */; };
-		4AA210921CDDD77100E0BA46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA210911CDDD77100E0BA46 /* AppDelegate.m */; };
-		4AA210951CDDD77100E0BA46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA210941CDDD77100E0BA46 /* ViewController.m */; };
 		4AA210981CDDD77100E0BA46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA210961CDDD77100E0BA46 /* Main.storyboard */; };
 		4AA2109A1CDDD77100E0BA46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA210991CDDD77100E0BA46 /* Assets.xcassets */; };
 		4AA2109D1CDDD77100E0BA46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA2109B1CDDD77100E0BA46 /* LaunchScreen.storyboard */; };
 		4AA210A81CDDD85400E0BA46 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA210A71CDDD85400E0BA46 /* MediaPlayer.framework */; };
 		4AA210AA1CDDD85B00E0BA46 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA210A91CDDD85B00E0BA46 /* AVFoundation.framework */; };
 		4AA210AC1CDDD86200E0BA46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA210AB1CDDD86200E0BA46 /* Foundation.framework */; };
-		4AA210BF1CDDDDFA00E0BA46 /* CDSideBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA210AE1CDDDDFA00E0BA46 /* CDSideBarController.m */; };
-		4AA210C01CDDDDFA00E0BA46 /* ChannelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA210B01CDDDDFA00E0BA46 /* ChannelInfo.m */; };
-		4AA210C11CDDDDFA00E0BA46 /* ChannelsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA210B21CDDDDFA00E0BA46 /* ChannelsTableViewCell.m */; };
 		4AA210C21CDDDDFA00E0BA46 /* ChannelsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AA210B31CDDDDFA00E0BA46 /* ChannelsTableViewCell.xib */; };
-		4AA210C31CDDDDFA00E0BA46 /* ChannelsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA210B51CDDDDFA00E0BA46 /* ChannelsTableViewController.m */; };
 		4AA210C41CDDDDFA00E0BA46 /* ChannelsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AA210B61CDDDDFA00E0BA46 /* ChannelsTableViewController.xib */; };
-		4AA210C51CDDDDFA00E0BA46 /* DFMHotChannelsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA210B81CDDDDFA00E0BA46 /* DFMHotChannelsEntity.m */; };
-		4AA210C61CDDDDFA00E0BA46 /* DFMPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA210BA1CDDDDFA00E0BA46 /* DFMPlaylist.m */; };
-		4AA210C71CDDDDFA00E0BA46 /* DFMRecChannelsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA210BC1CDDDDFA00E0BA46 /* DFMRecChannelsEntity.m */; };
-		4AA210C81CDDDDFA00E0BA46 /* DFMUpChannelsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA210BE1CDDDDFA00E0BA46 /* DFMUpChannelsEntity.m */; };
-		4AA210CB1CDDDE0600E0BA46 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA210CA1CDDDE0600E0BA46 /* LoginViewController.m */; };
-		4AA210DD1CDDDE1200E0BA46 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA210CD1CDDDE1100E0BA46 /* NetworkManager.m */; };
-		4AA210DF1CDDDE1200E0BA46 /* PlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA210D01CDDDE1100E0BA46 /* PlayerController.m */; };
-		4AA210E01CDDDE1200E0BA46 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA210D21CDDDE1200E0BA46 /* PlayerViewController.m */; };
-		4AA210E11CDDDE1200E0BA46 /* ProtocolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA210D41CDDDE1200E0BA46 /* ProtocolClass.m */; };
-		4AA210E21CDDDE1200E0BA46 /* SidebarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA210D61CDDDE1200E0BA46 /* SidebarController.m */; };
-		4AA210E31CDDDE1200E0BA46 /* SongInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA210D81CDDDE1200E0BA46 /* SongInfo.m */; };
-		4AA210E41CDDDE1200E0BA46 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA210DA1CDDDE1200E0BA46 /* UserInfo.m */; };
-		4AA210E51CDDDE1200E0BA46 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA210DC1CDDDE1200E0BA46 /* UserInfoViewController.m */; };
 		DFD61A41C0D1700985D229B7 /* libPods-Douban_8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE2A350693209985F888B0A5 /* libPods-Douban_8.a */; };
 /* End PBXBuildFile section */
 
@@ -238,11 +218,10 @@
 			buildConfigurationList = 4AA210A11CDDD77100E0BA46 /* Build configuration list for PBXNativeTarget "Douban_8" */;
 			buildPhases = (
 				E82C4ECABEBA3B6F50E40505 /* 📦 Check Pods Manifest.lock */,
-				4AA210861CDDD77100E0BA46 /* Sources */,
 				4AA210871CDDD77100E0BA46 /* Frameworks */,
 				4AA210881CDDD77100E0BA46 /* Resources */,
 				D7478E86471ED4DBAA78542B /* 📦 Embed Pods Frameworks */,
-				ADBB62E2D056469307BE0544 /* 📦 Copy Pods Resources */,
+				6C994F3EAAED9FBC18B7E673 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,7 +281,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		ADBB62E2D056469307BE0544 /* 📦 Copy Pods Resources */ = {
+		6C994F3EAAED9FBC18B7E673 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -348,36 +327,6 @@
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		4AA210861CDDD77100E0BA46 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4AA210951CDDD77100E0BA46 /* ViewController.m in Sources */,
-				4AA210BF1CDDDDFA00E0BA46 /* CDSideBarController.m in Sources */,
-				4AA210E11CDDDE1200E0BA46 /* ProtocolClass.m in Sources */,
-				4AA210DD1CDDDE1200E0BA46 /* NetworkManager.m in Sources */,
-				4AA210921CDDD77100E0BA46 /* AppDelegate.m in Sources */,
-				4AA210E51CDDDE1200E0BA46 /* UserInfoViewController.m in Sources */,
-				4AA210E41CDDDE1200E0BA46 /* UserInfo.m in Sources */,
-				4AA210DF1CDDDE1200E0BA46 /* PlayerController.m in Sources */,
-				4AA210C81CDDDDFA00E0BA46 /* DFMUpChannelsEntity.m in Sources */,
-				4AA210C71CDDDDFA00E0BA46 /* DFMRecChannelsEntity.m in Sources */,
-				4AA210C11CDDDDFA00E0BA46 /* ChannelsTableViewCell.m in Sources */,
-				4AA210C51CDDDDFA00E0BA46 /* DFMHotChannelsEntity.m in Sources */,
-				4AA210C01CDDDDFA00E0BA46 /* ChannelInfo.m in Sources */,
-				4AA210CB1CDDDE0600E0BA46 /* LoginViewController.m in Sources */,
-				4AA210C61CDDDDFA00E0BA46 /* DFMPlaylist.m in Sources */,
-				4AA210C31CDDDDFA00E0BA46 /* ChannelsTableViewController.m in Sources */,
-				4AA210E31CDDDE1200E0BA46 /* SongInfo.m in Sources */,
-				4AA2108F1CDDD77100E0BA46 /* main.m in Sources */,
-				4AA210E01CDDDE1200E0BA46 /* PlayerViewController.m in Sources */,
-				4AA210E21CDDDE1200E0BA46 /* SidebarController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
 		4AA210961CDDD77100E0BA46 /* Main.storyboard */ = {

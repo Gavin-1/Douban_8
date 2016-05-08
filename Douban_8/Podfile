@@ -1,6 +1,6 @@
 
 
-target'Douban_8'do
+target 'Douban_8' do
 platform :ios, '7.0'
 pod "AFNetworking", "~> 2.0"
 pod 'MJRefresh', '~> 1.4.5'

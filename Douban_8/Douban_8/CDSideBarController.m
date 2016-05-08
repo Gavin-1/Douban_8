@@ -83,6 +83,7 @@ static CDSideBarController* sharedInstance;//单例
         button.tag=index;
         //设置button的移动
         button.transform=CGAffineTransformTranslate(CGAffineTransformIdentity, 70, 0);
+        //给Button添加点击事件
         [button addTarget:self action:@selector(onMenuButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         //添加到buttonList中
         [_buttonList addObject:button];
